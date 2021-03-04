@@ -1,0 +1,145 @@
+header {
+  position: fixed;
+  width: 100%;
+  height: 90px;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  transition: border 0.4s ease-in-out, background-color 0.4s ease-in-out;
+  border-bottom: 1px solid rgba(245, 244, 240, 0.5);
+
+  nav {
+    @include list-unstyled;
+    @include h3;
+    margin-bottom: 0;
+
+    li {
+      display: inline-block;
+      a {
+        transition: opacity 0.3s ease;
+        &:hover {
+          opacity: 0.7;
+        }
+      }
+    }
+  }
+
+  .logo {
+    display: inline-block;
+    margin: auto;
+    height: 100%;
+    z-index: 99;
+    position: relative;
+    width: auto;
+
+    svg {
+      height: 49px;
+      width: 130px;
+    }
+  }
+
+  nav {
+
+    li {
+      &:not(:last-child) {
+        margin-right: 10px;
+      }
+    }
+  }
+
+  .container-fluid,
+  .row {
+    height: 100%;
+  }
+}
+
+header {
+  &.active-background, &.header-night {
+    color: $night;
+    top:0;
+    z-index: 3;
+    background: $off-white;
+    border-bottom: 1px solid $gray-400;
+
+    #burger-menu span {
+      background-color: $night;
+    }
+
+    .header-menu {
+      background: $off-white;
+      border-top:1px solid $gray-400;
+    }
+  }
+}
+
+#burger-menu {
+  position: absolute;
+  left: 13px;
+  top: 10px;
+  width: 23px;
+  height: 25px;
+  z-index: 99;
+  cursor: pointer;
+
+  span {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background-color: $off-white;
+    transition: background-color 0.25s, transform 0.25s;
+    -webkit-transition: background-color 0.25s, -webkit-transform 0.25s;
+
+    &:nth-of-type(1) {
+      top: 25%;
+    }
+
+    &:nth-of-type(4) {
+      top: 75%;
+    }
+
+    &:nth-of-type(2),
+    &:nth-of-type(3) {
+      top: 50%;
+    }
+  }
+
+  &.open {
+    span {
+      background-color: $off-white;
+
+      &:nth-of-type(1),
+      &:nth-of-type(4) {
+        transform: scaleX(0);
+        -webkit-transform: scaleX(0);
+      }
+
+      &:nth-of-type(2) {
+        transform: rotate(-45deg);
+        -webkit-transform: scaleX(-45deg);
+      }
+      &:nth-of-type(3) {
+        transform: rotate(45deg);
+        -webkit-transform: scaleX(45deg);
+      }
+    }
+  }
+}
+
+.header-menu {
+  display: none;
+  width: 100%;
+  height: auto;
+  position: fixed;
+  top: 0;
+  left: 0;
+  margin-top: 90px;
+}
+
+@include media-breakpoint-down(md) {
+}
+@include media-breakpoint-down(sm) {
+  header {
+    width: 100%;
+  }
+}

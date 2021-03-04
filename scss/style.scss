@@ -1,0 +1,26 @@
+// Frameworks
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&family=Open+Sans:wght@400;600&display=swap');
+@import 'vendor/bootstrap/bootstrap';
+@import 'vendor/swiper/swiper';
+
+@import 'base/variables';
+@import "base/mixins";
+
+@import 'base/spacing';
+@import 'base/fonts';
+@import 'base/root';
+@import 'base/type';
+@import 'base/svg';
+
+// Import Components
+@import 'components/footer';
+@import 'components/header';
+@import 'components/loader';
+@import 'components/icons';
+@import 'components/modal';
+
+
+// Plugins
+@import 'plugins/utilities';
+//@import 'plugins/dev';
+
