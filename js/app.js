@@ -47,7 +47,7 @@ function ready() {
   $("footer").load("./partials/_footer.html");
 
   // Load Modals
-  $("#svg").load("./img/svg/icons.svg");
+  $("#svg").load("./images/svg/icons.svg");
 
   scroll();
 }
