@@ -23,73 +23,64 @@
   </div>
 
   <!--Modals-->
-  <div class="modal-01"></div>
   <!--end-->
 
   <header class="header-night"></header>
 
-  <div class="modal__01 modal">
-    <div class="modal__overlay"></div>
-        <div class="modal__container">
-          <div class="modal__header">
-            <button type="button" class="btn btn-clear close-modal">
-              <svg class="icon-close" aria-hidden="true" data-micromodal-close><use href="#icon-close" xlink:href="#icon-close"></use></svg>
-            </button>
-          </div>
-          <div class="modal__content text-center">
-            <h2 class="color-black">RECIPE</h2>
-            <p>Citrus Jam
-                1 cup of sugar / 3 cups of orange and
-                grapefruit segments / 2 tbsp of lime juice / 1/3rd cup of vermouth blanc
-                Take a large mixing bowl and squeeze lemon juice on it. Mix the sugar and the orange and grapefruit segments and let it sit for around half an hour. Put the mixture in a saucepan and add the vermouth. Keep on heating everything until it starts boiling. Make sure that the heat dissolves all the ingredients together and that it feels like a thick paste (like jam). Roughly, it will take 15 minutes for all the ingredients to get dissolved, transfer it into the jar and let the jam cool.</p>
-          </div>
-        </div>
-  </div>
+  <main class="page mb-80 mb-md-100">
+      <section class="pt-190">
+          <div class="container-fluid px-lg-50">
+              <div class="row">
+                  <div class="col-12 text-center">
+                      <h1>La Tienda</h1>
+                  </div>
+              </div>
 
-  <main class="page-recipes mb-80 mb-md-100">
-    <section class="mt-90">
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col-lg-6 recipe-img" style="background-image:url('images/recipe01.jpg');background-repeat: no-repeat;background-size: cover;">
+              <div class="row mt-80 justify-content-center">
+                <div class="col-11 col-md-6 col-lg-4 product__card text-center" data-aos="fade-in">
+                    <a href="/">
+                      <div class="row">
+                        <figure class="col-lg-12">
+                          <div class="tag">
+                            <div class="tag-icon">Best Seller</div>
+                          </div>
+                          <img class="w-100" src="images/product01.png" alt="">
+                          <div class="position-absolute product__hover">
+                            <img class="w-100" src="images/Hover.jpg" alt="">
+                          </div>
+                        </figure>
+                      </div>
+                      <div class="col-lg-12 mt-45 mt-md-50">
+                        <h3 class="h2">CLASSICa</h3>
+                        <p>Palo santo, Mexican sage and jasmine flower. 
+                          A complex, deeply flavorful concoction.</p>
+                        <a href="/" class="btn btn__border mt-45">Shop</a>
+                      </div>
+                    </a>
                 </div>
-                <div class="col-lg-6 bg-pink py-30">
-                    <div class="recipe__content text-center">
-                        <div class="title py-35 bb-black px-30">
-                            <h2 class="h1 color-black">JUST BREATH COCKTAIL</h2>
-                        </div>
-                        <div class="ingredients bb-black py-45 px-30">
-                            <h3 class="h2 color-black">use next ingredients</h3>
-                            <p>Pink Gin 45 ml / White Vermouth (Dolin or Noilly Prat) 3/4 oz / Eucalyptus Syrup 15 ml</p>
-                        </div>
-                        <div class="row mx-0">
-                            <div class="col-md-6 py-30 px-30 br-black">
-                                <h3 class="h2 color-black">RECIPE</h3>
-                                <p>Fig Jam 1 cup sugar / 3 cups of finely chopped figs / 2 tbsp lemon juice / 1/3rd cup dry vermout</p>
-                                <a href="/" class="d-inline-block mt-30">See more <svg class="icon-more" aria-hidden="true"><use href="#icon-more" xlink:href="#icon-more"></use></svg></a>
-                            </div>
-    
-                            <div class="col-md-6 px-0">
-                                <div class="box bb-black py-55 px-30">
-                                    <h3 class="h2 color-black">method</h3>
-                                    <p>Stir</p>
-                                </div>
-    
-                                <div class="box bb-black py-30 px-30">
-                                    <h3 class="h2 color-black">Glass</h3>
-                                    <p>Nick and Nora</p>
-                                </div>
-    
-                                <div class="box py-35 px-30">
-                                    <h3 class="h2 color-black">GARNISH</h3>
-                                    <p>Edible flower</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+
+                <div class="col-11 col-md-6 col-lg-4 product__card text-center" data-aos="fade-in">
+                    <a href="/">
+                      <div class="row">
+                        <figure class="col-lg-12">
+                          <img class="w-100" src="images/product01.png" alt="">
+                          <div class="position-absolute product__hover">
+                            <img class="w-100" src="images/Hover.jpg" alt="">
+                          </div>
+                        </figure>
+                      </div>
+                      <div class="col-lg-12 mt-45 mt-md-50">
+                        <h3 class="h2">CLASSICa</h3>
+                        <p>Palo santo, Mexican sage and jasmine flower. 
+                          A complex, deeply flavorful concoction.</p>
+                        <a href="/" class="btn btn__border mt-45">Shop</a>
+                      </div>
+                    </a>
                 </div>
-            </div>
-        </div>
-    </section>
+                
+              </div>
+          </div>
+      </section>
   </main>
 
   <footer></footer>
@@ -103,6 +94,8 @@
   
   <!-- start: interactions -->
   <script src="js/libs/swiper.min.js"></script>
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script src="js/libs/basicScroll.js"></script>
   <script src="js/libs/tweenMax.min.js"></script>
   <!-- end: interactions -->
   

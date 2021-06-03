@@ -48,4 +48,40 @@
       color: $night;
     }
   }
+
+  &__secundary {
+    @include h3;
+    text-align: center;
+    background-color: $night;
+    color: $off-white;
+    border-radius: 3px;
+    padding: 10px;
+    min-width: 130px;
+    display: inline-block;
+    transition: all .4s ease-in-out;
+    text-transform: uppercase;
+
+    &:hover {
+      background-color: darken($night, 10%);
+      color: $off-white;
+    }
+  }
+}
+
+.tag {
+  position: absolute;
+  top:15px;
+  right: 15px;
+
+  &-icon {
+    @include h3;
+    border-radius: 100%;
+    width:80px;
+    height: 80px;
+    background-color: $green;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+  }
 }
