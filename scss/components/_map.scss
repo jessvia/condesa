@@ -1,0 +1,67 @@
+.location-map {
+    height: 100vh;
+}
+
+
+.sucursales {
+    overflow: scroll;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    position: relative;
+    max-height: calc(100vh - 220px);
+}
+
+.form-map {
+    .input-group {
+        border:1px solid $night;
+        background-color: $off-white;
+        display: flex;
+        border-radius: 3px;
+        padding: 15px 16px;
+        text-transform: uppercase;
+
+        input {
+            background-color: transparent;
+            box-shadow: none;
+            border:none;
+            flex: 1;
+            text-transform: uppercase;
+        }
+
+        button {
+            background-color: transparent;
+            box-shadow: none;
+            border:none;
+            .icon-search {
+                width:20px;
+                height: 20px;
+            }
+        }
+    }
+}
+
+
+.gm-style .gm-style-iw-c {
+    background-color: #E7E5DD;
+    box-shadow: none;
+    border-radius: 3px;
+}
+
+.gm-style .gm-style-iw-d::-webkit-scrollbar-track, .gm-style .gm-style-iw-d::-webkit-scrollbar-track-piece {
+    background-color: #E7E5DD;
+}
+
+.gm-style .gm-style-iw-t::after {
+    background: linear-gradient( 45deg,#E7E5DD 50%,#E7E5DD 51%,#E7E5DD 100%);
+    box-shadow: none;
+}
+#content { 
+    p {
+        margin-bottom:20px;
+        margin-top:10px
+    }
+
+    a {
+        text-decoration: underline;
+    }
+}

@@ -22,11 +22,12 @@ $night: #777772;
 $error: red;
 $pink: #FADFD3;
 $green: #C3D1C8;
-
+$gray: #E7E5DD;
 
 // Custom Backgrounds
 @include bg-variant(".bg-white", $white);
 @include bg-variant(".bg-pink", $pink);
+@include bg-variant(".bg-gray", $gray);
 
 
 // Base variables
